@@ -1,0 +1,79 @@
+body {
+  font-family: sans-serif;
+  padding: 1em;
+  width: 300px;
+}
+h1 {
+  font-size: 1.2em;
+}
+.password-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  margin-top: 0.5em;
+}
+
+.generated {
+  font-family: monospace;
+  font-size: 1.1em;
+  background: #f4f4f4;
+  padding: 0.5em;
+  margin: 0;
+  flex: 1;
+  border-radius: 4px;
+}
+
+.copy-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.2em;
+  color: #666;
+  cursor: pointer;
+  margin: 0;
+  padding: 0.3em;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.copy-btn:hover {
+  background: #e8e8e8;
+  color: #333;
+  transform: scale(1.1);
+}
+button {
+  margin-top: 1em;
+}
+.strength {
+  margin-top: 0.5em;
+  font-weight: bold;
+}
+
+#historyList li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+  padding: 0.3em;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+.password-text {
+  flex: 1;
+  font-family: monospace;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-right: 0.5em;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.3em;
+  flex-shrink: 0;
+}
+
+.button-group button {
+  margin: 0;
+  padding: 0.2em 0.5em;
+  font-size: 0.8em;
+}

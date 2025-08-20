@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>パスワード生成器</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>🔐 パスワード生成</h1>
+    <label>長さ: <span id="lengthValue">12</span></label>
+    <input type="range" id="lengthSlider" min="8" max="32" value="12">
+    <div>
+      <label><input type="checkbox" id="includeSymbols" checked> 記号を含める</label><br>
+      <label><input type="checkbox" id="includeUppercase" checked> 大文字を含める</label><br>
+    </div>
+    <button id="generateBtn">生成する</button>
+    <div class="password-container">
+      <p id="generatedPassword" class="generated"></p>
+      <button id="copyBtn" class="copy-btn" title="コピー">⧉</button>
+    </div>
+    <div class="strength" id="strengthBar">強度: -</div>
+    <details>
+      <summary>履歴（最新10件）</summary>
+      <ul id="historyList"></ul>
+    </details>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
